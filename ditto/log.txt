@@ -1,0 +1,7 @@
+Structured/Walmart-Amazon_lm=roberta_dk=False_su=False 10.193939
+Structured/Walmart-Amazon_lm=roberta_dk=False_su=False 10.162218
+Structured/Walmart-Amazon_lm=roberta_dk=False_su=False 10.504479
+Structured/Walmart-Amazon_lm=roberta_dk=False_su=False 10.216986
+Structured/Walmart-Amazon_lm=roberta_dk=False_su=False 10.081529
+Dirty/Walmart-Amazon_lm=roberta_dk=False_su=False 10.264835
+Dirty/Walmart-Amazon_lm=roberta_dk=False_su=False 10.179711

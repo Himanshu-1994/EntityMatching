@@ -1,0 +1,5 @@
+transformers
+tqdm==4.41.0
+nltk==3.5
+tensorboardX
+jsonlines

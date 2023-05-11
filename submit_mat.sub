@@ -1,0 +1,36 @@
+# gpu-lab.sub
+# sample submit file for GPU Lab jobs
+
+universe = vanilla
+var=roberta
+log = logs_$(var)/job_$(Cluster)_$(Process).log
+error = logs_$(var)/job_$(Cluster)_$(Process).err
+output = logs_$(var)/job_$(Cluster)_$(Process).out
+
+# Fill in with whatever executable you're using
+executable = mat.sh
+#executable = exe.sh
+#arguments = 
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT_OR_EVICT
+# Uncomment and add input files that are in /home
+transfer_input_files = ./ditto.tar,./env3.tar.gz
+
+# Uncomment and add custom requirements
+# requirements = 
+# requirements = (Poolname =!= "CHTC")
++WantGPULab = true
++GPUJobLength = "short"
+
+#+WantFlocking = true
+#+WantGlideIn = true
+
+#( DriverVersion >=11.1)
+require_gpus = (DriverVersion >= 11.1)
+request_gpus = 1
+request_cpus = 1
+request_memory = 32GB
+request_disk = 64GB
+
+queue 1
